@@ -556,6 +556,63 @@ footer {
     margin-bottom: 20px; /* Espaciado entre ítems */
 }
 
+/* Contenedor de cuadrícula para los espacios */
+.espacios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 20px; /* Espaciado entre las tarjetas */
+    padding: 20px; /* Añade espacio alrededor del contenedor */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .espacios-container {
+        grid-template-columns: 1fr; /* Cambiar a una columna en pantallas pequeñas */
+    }
+}
+
+/* Estilo para cada tarjeta de espacio */
+.espacios-img {
+    max-width: 300px; /* Tamaño máximo de las tarjetas */
+    width: 100%; /* Responsivo: se adapta al contenedor */
+    text-align: center; /* Centra el contenido dentro de la tarjeta */
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Fondo degradado suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    padding: 15px; /* Espaciado interno */
+}
+
+/* Imágenes dentro de las tarjetas */
+.space-image {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción original */
+    border-radius: 10px; /* Bordes redondeados */
+    object-fit: cover; /* Ajusta la imagen para que se vea bien */
+    margin-bottom: 10px; /* Espaciado entre la imagen y el texto */
+}
+
+/* Título y descripción con fondo gradiente */
+.espacios-img h3, .espacios-img p {
+    padding: 10px;
+    margin: 0;
+}
+
+.espacios-img h3 {
+    font-size: 1.5rem; /* Tamaño de la fuente del título */
+    color: #343a40; /* Color del texto */
+    margin: 10px 0;
+}
+
+
+.espacios-img p {
+    font-size: 1rem; /* Tamaño del texto de descripción */
+    color: #495057; /* Color del texto */
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+}
 
 
 /* Estilo para el fondo en formato de nube */
