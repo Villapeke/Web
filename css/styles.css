@@ -251,6 +251,34 @@ nav a:hover {
     margin: 0;
     text-align: center;
 }
+/* Contenedor de cuadrícula para las imágenes */
+.spaces-container,
+.novedades-container {
+    display: grid; /* Usamos CSS Grid */
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas por fila */
+    gap: 20px; /* Espaciado entre los elementos */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrado automático */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilos para las imágenes */
+.space-image,
+.novedades-image {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Mantener proporción */
+    object-fit: cover; /* Escalar la imagen para rellenar el espacio */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    aspect-ratio: 4 / 3; /* Relación de aspecto uniforme */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .spaces-container,
+    .novedades-container {
+        grid-template-columns: 1fr; /* Cambiar a una columna por fila */
+    }
+}
 
 /* Sección: Personal */
 .personal {
